@@ -396,12 +396,12 @@ This API allows the user to know the time remaining before an event subscription
   
   
   
-## SUBSCRIPTION RENEW [/events/subscription/renew/subscriptionid/{susbcriptionid}{?api_secret}]
+## SUBSCRIPTION RENEW [/events/subscription/renew/subscriptionid/{subscriptionId}{?api_secret}]
 This API allows a user to update an existing subscription’s expiration time. 
 Note: This updates an existing subscriptions expiry time. It does not increment it. i.e. If the existing expiration time is 3600 seconds and remaining time for expiration is 30 seconds – this API will increase the remaining time to 3600 seconds if POST with a value of 3600. 
 
 + Parameters
-    + subscriptionid (String) - This uniquely maps the event and the subscription. 
+    + subscriptionId (String) - This uniquely maps the event and the subscription. 
     + api_secret (String) - An Identifier unique to every user who is identified by a phone.  
 
 ### Subscription Renew [POST] 
@@ -428,12 +428,12 @@ Note: This updates an existing subscriptions expiry time. It does not increment 
 
 
 
-## TERMINATE SUBSCRIPTION [/events/subscription/terminate/subscriptionid/{susbcriptionid}{?api_secret}]
+## TERMINATE SUBSCRIPTION [/events/subscription/terminate/subscriptionid/{subscriptionId}{?api_secret}]
 
 This API allows the user to terminate any active subscription POST Request 
 
 + Parameters
-    + subscriptionid (String) - This uniquely maps the event and the subscription. 
+    + subscriptionId (String) - This uniquely maps the event and the subscription. 
     + api_secret (String) - An Identifier unique to every user who is identified by a phone.  
 
 ### Terminate Subscription [POST] 
