@@ -5,12 +5,17 @@ HOST: https://api.anpi.com/
 
 The APIs in this document are organized under the following categories 
 1. Authentication 
-2. Calling 3. Logging 
+2. Calling 
+3. Logging
+
+# Authentication
+
 Authentication refers to all API calls that deal with authentication to ANPI and renewing associated tokens. 
 Calling and Logging refer to the API calls that relate to calling and logging actions, respectively.
 
 Base URL 
 All URLs referenced in the documentation have the following base: 
+
 https://api.anpi.com/ 
 
 
@@ -86,8 +91,7 @@ The TTL call provides the time remaining in the 2 hour validity of the API_Secre
         } 
      
  
-
-## CALLING  [/calls/initiate/{destinationnumber}{?api_secret}]
+# Calling  [/calls/initiate/{destinationnumber}{?api_secret}]
 
 This API allows the user to make calls to phones within and outside your organization. 
 The Call ID (callid) obtained is then used to get call-specific details and perform call- specific operation like terminating a call etc. 
